@@ -15,7 +15,7 @@ PrivateDependencyModuleNames.AddRange(new string[] { "protobuf" });
 
 使用.uproject重新生成.sln文件,这一步会把protobuf模块加入到项目中。
 
-使用protoc.exe生成的.h文件中加入以下代码。
+使用protoc.exe生成的.h文件中加入以下代码。禁用警告。  
 \#pragma warning(disable:4125)  
 \#pragma warning(disable:4577)  
 \#pragma warning(disable:4800)  
