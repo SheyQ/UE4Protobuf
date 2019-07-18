@@ -16,12 +16,12 @@ PrivateDependencyModuleNames.AddRange(new string[] { "protobuf" });
 使用.uproject重新生成.sln文件,这一步会把protobuf模块加入到项目中。
 
 使用protoc.exe生成的.h文件中加入以下代码。
-\#pragma warning(disable:4125)
-\#wpragma warning(disable:4577)
-\#pragma warning(disable:4800)
-\#pragma warning(disable:4668)
-\#pragma warning(disable:4647)
-\#pragma warning(disable:4146)
+\#pragma warning(disable:4125)  
+\#pragma warning(disable:4577)  
+\#pragma warning(disable:4800)  
+\#pragma warning(disable:4668)  
+\#pragma warning(disable:4647)  
+\#pragma warning(disable:4146)  
 
 由于protobuf和ue4两个独有的check宏冲突，在ue4里不要使用该宏。
 
