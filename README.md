@@ -7,10 +7,10 @@
 
 我已经编译整理好了关于windows下的需要的lib库和相关头文件。
 直接把ThirdParty文件夹复制到虚幻4项目的Source目录下。
-在[项目名称].Build.cs里加入
-bEnableShadowVariableWarnings = false;
-bEnableUndefinedIdentifierWarnings = false;
-PrivateDependencyModuleNames.AddRange(new string[] { "protobuf" });
+在[项目名称].Build.cs里加入  
+bEnableShadowVariableWarnings = false;  
+bEnableUndefinedIdentifierWarnings = false;  
+PrivateDependencyModuleNames.AddRange(new string[] { "protobuf" });  
 禁用警告和添加protobuf模块。
 
 使用.uproject重新生成.sln文件,这一步会把protobuf模块加入到项目中。
